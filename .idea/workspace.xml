@@ -4,6 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="7800a5ef-80f3-457f-a14b-d3d2aca4759c" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list default="true" id="7800a5ef-80f3-457f-a14b-d3d2aca4759c" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,30 +51,31 @@
     <option name="showVisibilityIcons" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/studysoftware/ideaSpace/middleware/middleware2-rabbitmq-amqp/consumer/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8347e750f8941384ef194cdf11c3455a&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/studysoftware/ideaSpace/middleware/middleware2-rabbitmq-amqp/consumer/src/main/resources",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "8347e750f8941384ef194cdf11c3455a"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\studysoftware\ideaSpace\middleware\middleware2-rabbitmq-amqp\consumer\src\main\resources" />
       <recent name="D:\studysoftware\ideaSpace\middleware\middleware2-rabbitmq-amqp\producer\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.middleware.config" />
       <recent name="com.middleware.service" />
       <recent name="com.middleware.config.rabbit" />
     </key>
@@ -88,6 +92,9 @@
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="12" requestIdentifier="#12" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #14" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="14" requestIdentifier="#14" runType="运行单个请求">
       <method v="2" />
     </configuration>
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -111,6 +118,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP 请求.generated-requests | #14" />
       <item itemvalue="HTTP 请求.generated-requests | #11" />
       <item itemvalue="HTTP 请求.generated-requests | #12" />
       <item itemvalue="Spring Boot.ProducerApplication" />
@@ -118,13 +126,17 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP 请求.generated-requests | #11" />
+        <item itemvalue="HTTP 请求.generated-requests | #14" />
         <item itemvalue="Spring Boot.ConsumerApplication" />
+        <item itemvalue="HTTP 请求.generated-requests | #11" />
         <item itemvalue="HTTP 请求.generated-requests | #12" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="7800a5ef-80f3-457f-a14b-d3d2aca4759c" name="变更" comment="" />
@@ -135,7 +147,7 @@
       <workItem from="1674332177282" duration="758000" />
       <workItem from="1674334770127" duration="18505000" />
       <workItem from="1674376295580" duration="196000" />
-      <workItem from="1674376689891" duration="13614000" />
+      <workItem from="1674376689891" duration="31181000" />
     </task>
     <servers />
   </component>
