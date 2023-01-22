@@ -22,7 +22,7 @@ public class ProducerService {
     private AmqpTemplate amqpTemplate;
 
     public void business(String id) {
-        log.info("当前count:{}",integer.get());
+        log.info("当前count:{}", integer.get());
         if (integer.getAndIncrement() % 10 != 1) {
             //假设消息接收失败
             int i = 1 / 0;

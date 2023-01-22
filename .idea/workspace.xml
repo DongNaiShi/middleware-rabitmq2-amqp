@@ -4,14 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f68852cc-e7a2-4bff-a365-93ebdc6022dc" name="变更" comment="1">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="d94ae4b9-5d3c-47f6-8034-6d7be8ecf6ef" name="变更" comment="1">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/config/PluginDelayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/listener/DelayListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/config/RabbitDeadLetterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/config/RabbitDeadLetterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/config/RabbitDelayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/config/RabbitDelayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/listener/ConsumerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/listener/ConsumerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/middleware/service/ProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/middleware/ProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/middleware/ProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/middleware/config/rabbit/ExchangeConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/middleware/config/rabbit/ExchangeConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/middleware/config/rabbit/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/middleware/config/rabbit/RabbitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/middleware/config/rabbit/callback/ConfirmCallBackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/middleware/config/rabbit/callback/ConfirmCallBackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/middleware/controller/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/middleware/controller/ProducerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/middleware/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/middleware/service/ProducerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="enabledProfiles">
@@ -21,7 +50,22 @@
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="RunManager">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="middleware2-rabbitmq-amqp" />
       <method v="2">
@@ -35,9 +79,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.middleware.ConsumerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.middleware.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.middleware.ProducerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.middleware.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ProducerApplication" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ProducerApplication" />
+        <item itemvalue="Spring Boot.ConsumerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />

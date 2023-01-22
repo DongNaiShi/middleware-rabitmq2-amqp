@@ -16,6 +16,6 @@ import org.springframework.stereotype.Component;
 public class ConfirmCallBackService implements RabbitTemplate.ConfirmCallback {
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
-        log.info("ConfirmCallback ack:{},cause:{},data:{}",ack,cause,correlationData);
+        log.info("ConfirmCallback ack:{},cause:{},data:{}", ack, cause, correlationData);
     }
 }

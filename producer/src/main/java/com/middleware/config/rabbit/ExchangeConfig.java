@@ -4,7 +4,6 @@ package com.middleware.config.rabbit;
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 
 /**
  * @Auther: dongns
@@ -16,8 +15,7 @@ import org.springframework.context.annotation.Profile;
 //@Profile("pro")
 public class ExchangeConfig {
     @Bean
-    public TopicExchange topicExchange()
-    {
+    public TopicExchange topicExchange() {
         return new TopicExchange("con.delay.exchange");
     }
 }

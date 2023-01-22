@@ -18,20 +18,24 @@ public class ProducerController {
     private ProducerService producerService;
 
     @PostMapping("business")
-    public void business(@RequestParam String id)
-    {
+    public void business(@RequestParam String id) {
         producerService.business(id);
     }
 
     @GetMapping("businessByMQ")
-    public void businessByMQ(@RequestParam String id)
-    {
+    public void businessByMQ(@RequestParam String id) {
         producerService.businessByMQ(id);
     }
 
     @GetMapping("businessByDelay")
-    public void businessDelay(@RequestParam String id)
-    {
+    public void businessDelay(@RequestParam String id) {
         producerService.businessByDelay(id);
     }
+
+    @GetMapping("send/{msg}/{delay}")
+    public void send(@PathVariable String msg,@PathVariable Integer delay)
+    {
+        producerService.sendMsg(msg,delay);
+    }
+
 }

@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Profile;
 @Slf4j
 @Configuration
 @Profile("test")
-public class RabbitConfig  {
+public class RabbitConfig {
 
     @Autowired
     private ConnectionFactory connectionFactory;
@@ -29,8 +29,7 @@ public class RabbitConfig  {
     private RabbitTemplate.ReturnsCallback returnsCallback;
 
     @Bean
-    public RabbitTemplate rabbitTemplate()
-    {
+    public RabbitTemplate rabbitTemplate() {
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
         rabbitTemplate.setMandatory(true);
         rabbitTemplate.setConfirmCallback(confirmCallback);
@@ -38,7 +37,6 @@ public class RabbitConfig  {
         rabbitTemplate.setExchange("pro.exchange");
         return rabbitTemplate;
     }
-
 
 
 }

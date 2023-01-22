@@ -33,16 +33,16 @@ public class ProducerService {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        log.info("business process:{}",id);
+        log.info("business process:{}", id);
     }
 
     public void businessByMQ(String id) {
         //构建消息
-        Message message= MessageBuilder.withBody(id.getBytes()).build();
+        Message message = MessageBuilder.withBody(id.getBytes()).build();
         //设置消息全局id
         message.getMessageProperties().setMessageId(UUID.randomUUID().toString());//设置自己的消息id
         //发送消息
-        amqpTemplate.convertAndSend("pro.business",message);
+        amqpTemplate.convertAndSend("pro.business", message);
     }
 
     public void businessByDelay(String id) {
@@ -52,10 +52,19 @@ public class ProducerService {
         message.getMessageProperties().setMessageId(UUID.randomUUID().toString());
         //发送消息个消息
         Date dateTime = new Date();
-        log.info("开始延时任务5s,当前时间:{}",dateTime);
-        amqpTemplate.convertAndSend("con.delay.exchange","con.delay.key",id, message1 -> {
+        log.info("开始延时任务5s,当前时间:{}", dateTime);
+        amqpTemplate.convertAndSend("con.delay.exchange", "con.delay.key", id, message1 -> {
             message1.getMessageProperties().setExpiration("5000");
             return message1;
+        });
+    }
+    private final String PLUGIN_EXCHANGE="plugin.delay.exchange";
+    private final String PLUGIN_ROUTE_KEY="plugin.delay.routeKey";
+    public void sendMsg(String msg, Integer delay) {
+        log.info("延迟:{}",delay);
+        amqpTemplate.convertAndSend(PLUGIN_EXCHANGE, PLUGIN_ROUTE_KEY, msg, message -> {
+            message.getMessageProperties().setDelay(delay);
+            return message;
         });
     }
 }
