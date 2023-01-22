@@ -4,3 +4,4 @@ spring:
     template:
       mandatory: true #开启消息强制回退，
       exchange: pro.exchange
+#      routing-key: pro.business
