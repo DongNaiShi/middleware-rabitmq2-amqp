@@ -1,9 +1,17 @@
 package com.middleware.service;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageBuilder;
+import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
+import java.util.UUID;
+
 
 /**
  * @Auther: dongns
@@ -29,6 +37,25 @@ public class ProducerService {
     }
 
     public void businessByMQ(String id) {
-        amqpTemplate.convertAndSend("pro.business",id);
+        //构建消息
+        Message message= MessageBuilder.withBody(id.getBytes()).build();
+        //设置消息全局id
+        message.getMessageProperties().setMessageId(UUID.randomUUID().toString());//设置自己的消息id
+        //发送消息
+        amqpTemplate.convertAndSend("pro.business",message);
+    }
+
+    public void businessByDelay(String id) {
+        //构建消息
+        Message message = MessageBuilder.withBody(id.getBytes()).build();
+        //设置全局消息id
+        message.getMessageProperties().setMessageId(UUID.randomUUID().toString());
+        //发送消息个消息
+        Date dateTime = new Date();
+        log.info("开始延时任务5s,当前时间:{}",dateTime);
+        amqpTemplate.convertAndSend("con.delay.exchange","con.delay.key",id, message1 -> {
+            message1.getMessageProperties().setExpiration("5000");
+            return message1;
+        });
     }
 }

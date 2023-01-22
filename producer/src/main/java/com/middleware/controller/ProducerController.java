@@ -28,4 +28,10 @@ public class ProducerController {
     {
         producerService.businessByMQ(id);
     }
+
+    @GetMapping("businessByDelay")
+    public void businessDelay(@RequestParam String id)
+    {
+        producerService.businessByDelay(id);
+    }
 }
