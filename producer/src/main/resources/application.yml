@@ -1,0 +1,14 @@
+server:
+  port: 8001
+spring:
+  profiles:
+    active: @env@
+  application:
+    name: producer
+  rabbitmq:
+    username: middleware
+    password: 123456
+    virtual-host: /middleware
+    publisher-confirm-type: correlated #开启 消息发布确认 不管发送到交换机的结果如何都会调用 ConfirmCallBack 接口
+    publisher-returns: true #开启 消息回退，如果消息路由不到队列就会调用相应的ReturnCallBack 接口
+

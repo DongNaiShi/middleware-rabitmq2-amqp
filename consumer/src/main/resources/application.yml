@@ -1,0 +1,19 @@
+server:
+  port: 8011
+spring:
+  profiles:
+    active: @env@
+  application:
+    name: consumer
+  rabbitmq:
+    username: middleware
+    password: 123456
+    virtual-host: /middleware
+    listener:
+      simple:
+        acknowledge-mode: manual
+        retry: #这里才是消费者拒绝的重试
+          enabled: true
+          max-attempts: 4 #重试4次后进入死信队列
+          initial-interval: 3s
+          max-interval: 4s

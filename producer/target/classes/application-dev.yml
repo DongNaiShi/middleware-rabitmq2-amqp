@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+    host: general-0
+    template:
+      mandatory: true #开启消息强制回退，
+      exchange: pro.exchange

@@ -1,0 +1,7 @@
+com\middleware\config\rabbit\RabbitConfig2.class
+com\middleware\config\rabbit\callback\ConfirmCallBackService.class
+com\middleware\ProducerApplication.class
+com\middleware\controller\ProducerController.class
+com\middleware\config\rabbit\RabbitConfig.class
+com\middleware\config\rabbit\callback\ReturnsCallBackService.class
+com\middleware\service\ProducerService.class
